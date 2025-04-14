@@ -21,25 +21,24 @@ vim trivial_str_search.py
 ######################
 
 #################### already installed ############################################
-ll /data2/BDP1/hg19/ncbi-blast-2.7.1+-1.x86_64.rpm
+ll /data2/BDP1/hg19/ncbi-blast-2.16.0+-1.x86_64.rpm
 # you need to be root
-################ DO NOT USE THIS VERSION yum localinstall /data2/BDP1/hg19/ncbi-blast-2.7.1+-1.x86_64.rpm ############################
-# IF IT WAS INSTALLED REMOVE IT: yum remove ncbi-blast-2.7.1+-1.x86_64
-
-#### USE THIS ONE INSTEAD:
-yum localinstall /data2/BDP1/hg19/ncbi-blast-2.15.0+-3.x86_64.rpm
+yum localinstall /data2/BDP1/hg19/ncbi-blast-2.16.0+-1.x86_64.rpm
 ###################################################################################
 
-############## create the index for BLAST -  ALREADY DONE ##########################
-#makeblastdb -in entire_hg19.fa -out entire_hg19BLAST -dbtype nucl  -parse_seqids
-####### ALREADY DONE - DO not run it again!!!!!!!!!
-##################################################################################
+############## create the index for BLAST -  ALREADY DONE #########################################################
+############    makeblastdb -in entire_hg19.fa -out entire_hg19BLAST -dbtype nucl  -parse_seqids    ###############
+####### ALREADY DONE - DO not run it again!!!!!!!!!   #############################################################
+###################################################################################################################
+
 # INDEX is in /data2/BDP1/hg19/
 
 ls -l /data2/BDP1/hg19/
 
 ########### get the query ###########################
+
 cp /data2/BDP1/hg19/myread.fa .
+
 #####################################################
 
 
