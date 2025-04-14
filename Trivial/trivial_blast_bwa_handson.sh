@@ -65,11 +65,30 @@ yum install zlib-devel
 ###############################################
 tar -xvf bwa-0.7.15.tar
 cd bwa-0.7.15/
+
+##################       !!!!!!    IMPORTANT !!!!!!!   #########################################################
+
 # applied patch described here: https://github.com/lh3/bwa/commit/2a1ae7b6f34a96ea25be007ac9d91e57e9d32284
+
+#### in line33 remove: const uint8_t rle_auxtab[8];
+#### add line:         extern const uint8_t rle_auxtab[8];
+
+###################################################################################################################
+###################################################################################################################
+
+#### RUN MAKE to compile and link ###########################################
+
 make 
 
+# you should now have the bwa executable
+#############################################################################
+
 # use your own bwa installation ###########
+
+# change your_path to your bwa location, i.e. /root
+
 export PATH=$PATH:/your_path/bwa-0.7.15/
+
 ###########################################
 
 ############  BWA Istallation Completed #############################
