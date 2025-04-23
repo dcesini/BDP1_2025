@@ -11,19 +11,19 @@ create 3 VMs on AWS:
 #INSTALL THE CENTRAL MANAGER
 #LOGIN VIA SSH to the central manager
 
-curl -fsSL https://get.htcondor.org | sudo GET_HTCONDOR_PASSWORD="BDP1_2024" /bin/bash -s -- --no-dry-run --central-manager <the_central_manager_private_IP>
+curl -fsSL https://get.htcondor.org | sudo GET_HTCONDOR_PASSWORD="BDP1_2025" /bin/bash -s -- --no-dry-run --central-manager <the_central_manager_private_IP>
 #CHECK CONDOR STATUS
 condor_status
 ps auxwf
 
 #INSTALL THE SUBMIT NODE
 #LOGIN VIA SSH to the submit node
-curl -fsSL https://get.htcondor.org | sudo GET_HTCONDOR_PASSWORD="BDP1_2024" /bin/bash -s -- --no-dry-run --submit <the_central_manager_private_IP>
+curl -fsSL https://get.htcondor.org | sudo GET_HTCONDOR_PASSWORD="BDP1_2025" /bin/bash -s -- --no-dry-run --submit <the_central_manager_private_IP>
 condor_status
 
 #INSTALL THE EXECUTE NODE
 #LOGIN VIA SSH to the execute node
-curl -fsSL https://get.htcondor.org | sudo GET_HTCONDOR_PASSWORD="BDP1_2024" /bin/bash -s -- --no-dry-run --execute <the_central_manager_private_IP>
+curl -fsSL https://get.htcondor.org | sudo GET_HTCONDOR_PASSWORD="BDP1_2025" /bin/bash -s -- --no-dry-run --execute <the_central_manager_private_IP>
 condor_status
 
 
