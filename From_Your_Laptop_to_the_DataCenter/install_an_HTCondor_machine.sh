@@ -8,6 +8,10 @@ create 3 VMs on AWS:
 2) submit node t3_small
 3) execute node t3_medium
 
+##########################################################################
+(make available the /data2 directory to all the VMs, i.e. USE NFS!!)
+##########################################################################
+
 #INSTALL THE CENTRAL MANAGER
 #LOGIN VIA SSH to the central manager
 
