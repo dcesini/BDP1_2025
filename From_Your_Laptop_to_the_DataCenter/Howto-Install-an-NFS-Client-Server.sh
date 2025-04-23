@@ -18,7 +18,7 @@
  
  yum install nfs-utils
  # mount -t nfs -o ro,nosuid <your_server_ip>:/data /data   - you can skip this
- ll /data/
+ ll /data2/
  # umount /data  - you can skip this
  cat /etc/fstab
-<SERVER_PRIVATE_IP>:/data /data   nfs defaults        0 0
+<SERVER_PRIVATE_IP>:/data2 /data2   nfs defaults        0 0
