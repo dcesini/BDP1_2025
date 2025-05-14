@@ -101,7 +101,7 @@ CMD ["apachectl", "-D", "FOREGROUND"]
 <html>
 <h1>Hello from a web server running inside a container!</h1>
 
-This is an exercise for the HPQC Master.
+This is an exercise for the BDP1 Master.
 </html>
 ###############################################
 
